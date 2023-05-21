@@ -73,7 +73,7 @@ def clone_repos(read_file, passphrase):
 
 def main() -> None:
     open_app("cmd")
-    send_cmd("gh search repos ukg --language python --limit 15")
+    send_cmd("gh search repos abc --language python --limit 15")
     extract_repos_to_csv("git@github.com:", ".git", "gh_repos.csv")
     clone_repos("gh_repos_cli.csv", "chopin")
 
